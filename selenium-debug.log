@@ -1,0 +1,48 @@
+15:05:42.742 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+15:05:42.743 INFO - Launching a standalone Selenium Server
+2017-07-19 15:05:42.759:INFO::main: Logging initialized @231ms to org.seleniumhq.jetty9.util.log.StdErrLog
+15:05:42.808 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform LINUX
+15:05:42.808 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform LINUX
+15:05:42.809 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:05:42.809 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+15:05:42.809 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:05:42.809 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+15:05:42.810 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform LINUX
+2017-07-19 15:05:42.848:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-07-19 15:05:42.880:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@475530b9{/,null,AVAILABLE}
+2017-07-19 15:05:42.894:INFO:osjs.AbstractConnector:main: Started ServerConnector@683215d{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-07-19 15:05:42.895:INFO:osjs.Server:main: Started @366ms
+15:05:42.895 INFO - Selenium Server is up and running
+15:05:43.156 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+15:05:43.179 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, phantomjs.binary.path=/home/framgia/Documents/nightwatch/google/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs, browserName=phantomjs, javascriptEnabled=true, platform=ANY}]])
+15:05:43.197 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, phantomjs.binary.path=/home/framgia/Documents/nightwatch/google/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs, browserName=phantomjs, javascriptEnabled=true, platform=ANY}]
+15:05:43.203 INFO - executable: /home/framgia/Documents/nightwatch/google/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs
+15:05:43.203 INFO - port: 26967
+15:05:43.203 INFO - arguments: [--webdriver=26967, --webdriver-logfile=/home/framgia/Documents/nightwatch/google/phantomjsdriver.log]
+15:05:43.203 INFO - environment: {}
+[INFO  - 2017-07-19T08:05:43.527Z] GhostDriver - Main - running on port 26967
+[INFO  - 2017-07-19T08:05:43.789Z] Session [103494a0-6c59-11e7-8d7b-f943161b2555] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-07-19T08:05:43.790Z] Session [103494a0-6c59-11e7-8d7b-f943161b2555] - page.customHeaders:  - {}
+[INFO  - 2017-07-19T08:05:43.790Z] Session [103494a0-6c59-11e7-8d7b-f943161b2555] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-07-19T08:05:43.790Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 103494a0-6c59-11e7-8d7b-f943161b2555
+15:05:43.811 INFO - Detected dialect: OSS
+15:05:43.825 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, phantomjs.binary.path=/home/framgia/Documents/nightwatch/google/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs, browserName=phantomjs, javascriptEnabled=true, platform=ANY}]]
+15:05:43.843 INFO - Executing: [get: http://google.com])
+15:05:44.315 INFO - Done: [get: http://google.com]
+15:05:44.321 INFO - Executing: [find elements: By.cssSelector: body])
+15:05:44.390 INFO - Done: [find elements: By.cssSelector: body]
+15:05:44.395 INFO - Executing: [is displayed: 0 [[PhantomJSDriver: phantomjs on LINUX (103494a0-6c59-11e7-8d7b-f943161b2555)] -> css selector: body]])
+15:05:44.455 INFO - Done: [is displayed: 0 [[PhantomJSDriver: phantomjs on LINUX (103494a0-6c59-11e7-8d7b-f943161b2555)] -> css selector: body]]
+15:05:44.468 INFO - Executing: [get title])
+15:05:44.511 INFO - Done: [get title]
+15:05:44.544 INFO - Executing: [find element: By.cssSelector: input[name="q"]])
+15:05:44.619 INFO - Done: [find element: By.cssSelector: input[name="q"]]
+15:05:44.626 INFO - Executing: [is displayed: 1 [[PhantomJSDriver: phantomjs on LINUX (103494a0-6c59-11e7-8d7b-f943161b2555)] -> css selector: input[name="q"]]])
+15:05:44.687 INFO - Done: [is displayed: 1 [[PhantomJSDriver: phantomjs on LINUX (103494a0-6c59-11e7-8d7b-f943161b2555)] -> css selector: input[name="q"]]]
+15:05:44.716 INFO - Executing: [delete session: da8e70bf-0a1d-4506-abfb-4d82aceef2c4])
+[INFO  - 2017-07-19T08:05:44.772Z] ShutdownReqHand - _handle - About to shutdown
+15:05:44.844 INFO - Done: [delete session: da8e70bf-0a1d-4506-abfb-4d82aceef2c4]

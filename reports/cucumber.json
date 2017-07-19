@@ -1,0 +1,60 @@
+[
+  {
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Google Search",
+    "tags": [],
+    "uri": "/home/framgia/Documents/nightwatch/google/features/google.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Searching Google",
+        "tags": [],
+        "id": "google-search;searching-google",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Google's search page",
+            "result": {
+              "status": "passed",
+              "duration": 1462
+            },
+            "line": 7,
+            "match": {
+              "location": "/home/framgia/Documents/nightwatch/google/features/step_definitions/google.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the title is \"Google\"",
+            "result": {
+              "status": "passed",
+              "duration": 53
+            },
+            "line": 8,
+            "match": {
+              "location": "/home/framgia/Documents/nightwatch/google/features/step_definitions/google.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Google search form exists",
+            "result": {
+              "status": "passed",
+              "duration": 163
+            },
+            "line": 9,
+            "match": {
+              "location": "/home/framgia/Documents/nightwatch/google/features/step_definitions/google.js:15"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "google-search"
+  }
+]
