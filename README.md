@@ -7,3 +7,6 @@ npm install -g selenium-server
 npm install phantomjs-prebuilt
 ### run nightwatch
 node_modules/.bin/nightwatch
+## reference documents
+https://www.libhive.com/providers/npm/packages/nightwatch-cucumber
+https://github.com/mucsi96/nightwatch-cucumber
