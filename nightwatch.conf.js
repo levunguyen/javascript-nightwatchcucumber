@@ -1,10 +1,30 @@
 const seleniumServer = require('selenium-server')
 const phantomjs = require('phantomjs-prebuilt')
 const chromedriver = require('chromedriver')
+var reporter = require('cucumber-html-reporter');
 
 require('nightwatch-cucumber')({
   cucumberArgs: ['--require', 'timeout.js', '--require', 'features/step_definitions', '--format', 'pretty', '--format', 'json:reports/cucumber.json', 'features']
 })
+
+var options = {
+  theme: 'bootstrap',
+  jsonFile: 'reports/cucumber.json',
+  output: 'reports/cucumber.html',
+  reportSuiteAsScenarios: true,
+  launchReport: true,
+  metadata: {
+    "App Version":"0.3.2",
+    "Test Environment": "STAGING",
+    "Browser": "Chrome  54.0.2840.98",
+    "Platform": "Windows 10",
+    "Parallel": "Scenarios",
+    "Executed": "Remote"
+  }
+};
+
+reporter.generate(options);
+
 
 module.exports = {
   output_folder: 'reports',
@@ -20,6 +40,11 @@ module.exports = {
   },
   test_settings: {
     default: {
+      screenshots : {
+        enabled : true,
+        on_failure : true,
+        path: 'screenshots/default'
+      },
       launch_url: 'http://localhost:8087',
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
